@@ -385,7 +385,9 @@ module.exports = {
 
       "CONSERVATIVE_LABEL": "Conservative",
       "AGGRESSIVE_LABEL": "Aggressive",
-      "BALANCE_LABEL": "Balance"
+      "BALANCE_LABEL": "Balance",
+      "SIGNIN_LABEL": "Signin",
+      "REGISTER_LABEL": "Register"
     },
     idn: {
       "GREETING_MORNING": "Selamat Pagi!",
@@ -659,6 +661,8 @@ module.exports = {
       "CONSERVATIVE_LABEL": "Konservatif",
       "AGGRESSIVE_LABEL": "Agresif",
       "BALANCE_LABEL": "Seimbang"
+      "SIGNIN_LABEL": "Masuk",
+      "REGISTER_LABEL": "Daftar"
     }
   }
 };
