@@ -1,0 +1,19 @@
+{
+  "name": "david-locale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandavid/david-locale.git"
+  },
+  "author": "Evan David Kristian <evkristian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evandavid/david-locale/issues"
+  },
+  "homepage": "https://github.com/evandavid/david-locale#readme"
+}
