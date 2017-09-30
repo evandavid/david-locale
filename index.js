@@ -660,7 +660,7 @@ module.exports = {
 
       "CONSERVATIVE_LABEL": "Konservatif",
       "AGGRESSIVE_LABEL": "Agresif",
-      "BALANCE_LABEL": "Seimbang"
+      "BALANCE_LABEL": "Seimbang",
       "SIGNIN_LABEL": "Masuk",
       "REGISTER_LABEL": "Daftar"
     }
