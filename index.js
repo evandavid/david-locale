@@ -371,13 +371,6 @@ module.exports = {
       "PLEASE_SIGN_HERE_LABEL": "Please sign here *",
 
 
-
-
-      "GREETING_WELCOME": "Sign in",
-      "GREETING_MORNING": "",
-      "GREETING_AFTERNOON": "",
-      "GREETING_EVENING": "",
-      "ENTER_YOUR_DETAIL": "to continue <strong>PayOr</strong>",
       "YOUR_EMAIL_LABEL": "Your Email",
       "YOUR_PASSWORD_LABEL": "Your Password",
       "OUR_PRODUCT_LABEL": "Our Product",
@@ -648,11 +641,7 @@ module.exports = {
 
       "PLEASE_SIGN_HERE_LABEL": "Mohon bubuhkan tanda tangan disini *",
 
-      "GREETING_WELCOME": "Masuk",
-      "GREETING_MORNING": "",
-      "GREETING_AFTERNOON": "",
-      "GREETING_EVENING": "",
-      "ENTER_YOUR_DETAIL": "untuk melanjutkan ke <strong>PayOr</strong>",
+
       "YOUR_EMAIL_LABEL": "Email Anda",
       "YOUR_PASSWORD_LABEL": "Katasandi Anda",
       "OUR_PRODUCT_LABEL": "Produk Kami",
