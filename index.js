@@ -380,7 +380,11 @@ module.exports = {
       "AGGRESSIVE_LABEL": "Aggressive",
       "BALANCE_LABEL": "Balance",
       "SIGNIN_LABEL": "Signin",
-      "REGISTER_LABEL": "Register"
+      "REGISTER_LABEL": "Register",
+
+      "SORT_BASED_ON_LABEL": "Sort based on",
+      "SEARCH_LABEL": "Search product"
+
     },
     idn: {
       "GREETING_MORNING": "Selamat Pagi!",
@@ -651,7 +655,10 @@ module.exports = {
       "AGGRESSIVE_LABEL": "Agresif",
       "BALANCE_LABEL": "Seimbang",
       "SIGNIN_LABEL": "Masuk",
-      "REGISTER_LABEL": "Daftar"
+      "REGISTER_LABEL": "Daftar",
+
+      "SORT_BASED_ON_LABEL": "Urutkan berdasarkan",
+      "SEARCH_LABEL": "Cari produk"
     }
   }
 };
