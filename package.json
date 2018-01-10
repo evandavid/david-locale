@@ -1,6 +1,6 @@
 {
   "name": "david-locale",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/evandavid/david-locale/issues"
   },
-  "homepage": "https://github.com/evandavid/david-locale#readme"
+  "homepage": "https://github.com/evandavid/david-locale#readme",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
 }

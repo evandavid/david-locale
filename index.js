@@ -1,123 +1,12 @@
 module.exports = {
-  errors: {
-    en: {
-      "ERR_LOGIN": "The email or password is incorrect",
-      "ERR_NOT_EXIST": "Email is not registered",
-      "ERR_STRONG_PASSWORD": "Password must have capital letters, numbers, and at least 6 characters",
-      "ERR_PASSWORD_CONFIRMATION": "Password Confirmation is not match",
-      "ERR_FORGOT": "Email or Code is incorrect, please try again",
-      "EMAIL_INVALID": "That email address is already taken please choose another one",
-      "PHONE_INVALID": "Phone number is already taken please choose another one",
-      "ERR_USER_NOT_FOUND": "Email is not registered",
-      "ERR_GLOBAL": "Something went wrong, please try again or contact our customer service",
-      "ERR_RESEND_CODE": "You cannot resend the verification code, please contact our customer service",
-      "ERR_CODE_VERIFICATION": "The verification code is incorrect",
-      "ERR_LOCKED": "You have entered wrong password too many times. Please try again in",
-      "ERR_PASSWORD": "Password is incorrect, please try again",
-      "ERR_CANNOT_BE_EMPTY": "cannot be empty",
-      "ERR_NOT_VALID": "This field is not valid",
-      "ERR_CANNOT_EMPTY": "cannot be empty",
-      "ERR_LENGTH_NOT_VALID": "length should be",
-      "ERR_NUMERIC_ONLY": "numeric only",
-      "ERR_EMAIL_NOT_VALID": "email is not valid",
-      "ERR_FIELD_NOT_MATCH": "field is not match",
-      "ERR_DATE_NOT_VALID": "date is not valid",
-      "ERR_AGE_NOT_VALID": "age should be",
-      "ERR_CANNOT_EQUAL": "cannot be equal with",
-      "ERR_NUMERIC_VALUE": "number should be",
-      "ERR_GT": " greather than ",
-      "ERR_LT": " less than ",
-      "ERR_EQ": " equal to ",
-      "ERR_LTE": " less or equal than ",
-      "ERR_GTE": " greather or equal than ",
-      "ERR_SAVE_FORM": "Ops, we were unable to save the form, please check error message in input field and try again.",
-      "ERR_TRANS_ACCOUNT_NOT_COMPLETE": "Your profile is incomplete, please complete it first to make the transaction.",
-      "ERR_TRANS_ACCOUNT_NOT_VERIFY": "Your profile is in the verification process, you can resume the transaction once the profile has been successfully verified.",
-
-      "CHECKOUT_ERROR_INSUFFICIENTBALANCE": "Sorry, your balance is insufficient",
-      "CHECKOUT_ERROR_INSUFFICIENTUNIT": "Sorry, the product you have is insufficient",
-      "CHECKOUT_ERROR_MIN": "Sorry, minimum purchase is not appropriate",
-      "CHECKOUT_ERROR_MINBAL": "Sorry, at least the remaining unit product does not match",
-      "CHECKOUT_ERROR_USERNOTYETDEPOSIT": "Sorry, you must make a deposit to continue the transaction (TBD)",
-      "CHECKOUT_ERROR_ACTIVECARTNOTFOUND": "Sorry, your shopping cart is empty (TBD)",
-      "CHECKOUT_ERROR_USERNOTYETVEIFIED": "Sorry, your account has not been verified by the system (TBD)",
-      "CHECKOUT_ERROR_USERNOTCOMPLETE": "Sorry, you must complete the profile before making a transaction (TBD)",
-      "CHECKOUT_ERROR_CODEWRONG": "Sorry, the verification code you entered is not correct",
-      "SWITCHING_ERROR_CANNOT_EQUAL": "Sorry, you canot switch to same product (TBD)",
-      "ERR_PASSWORD_EMPTY": "Please insert your password.",
-
-      "ERR_FACE": "Your transaction is less than the minimum amount of purchase specified. Please change it first.",
-      "ERR_FACE_SELL": "Your transaction is less than the minimum amount of sales specified. Please change it first.",
-      "ERR_ONLY_REDEMPT": "The remaining units of your product are not sufficient for the minimum balance of the set",
-
-      "ERR_UNKNOWN": "Ops, someting went wrong, please try again",
-
-      "ERR_REMAINING_BALANCE": "You exceeded limit of your remaining balance, please contact us to remove the limitation"
-    },
-    idn: {
-      "ERR_LOGIN": "Email atau password tidak benar",
-      "ERR_NOT_EXIST": "Email tidak terdaftar",
-      "ERR_STRONG_PASSWORD": "Katasandi harus memiliki huruf kapital, angka, dan minimal 6 karakter",
-      "ERR_PASSWORD_CONFIRMATION": "Konfirmasi Katasandi tidak sesuai",
-      "ERR_FORGOT": "Email atau Kode tidak benar, silahkan coba lagi",
-      "EMAIL_INVALID": "Alamat email yang sudah terdaftar silahkan pilih yang lain",
-      "PHONE_INVALID": "Nomor telpon genggam yang sudah terdaftar silahkan pilih yang lain",
-      "ERR_USER_NOT_FOUND": "Email tidak terdaftar",
-      "ERR_GLOBAL": "Terjadi kesalahan sistem, silahkan coba lagi atau hubungi pengaduan pelanggan kami",
-      "ERR_RESEND_CODE": "Anda tidak bisa mengirim ulang kode verifikasi, silahkan hubungi pengaduan pelanggan kami",
-      "ERR_CODE_VERIFICATION": "Kode verifikasi tidak benar",
-      "ERR_LOCKED": "Akun anda telah dikunci untuk alasan keamanan, silahkan coba lagi dalam",
-      "ERR_PASSWORD": "Katasandi tidak benar, silahkan coba lagi",
-      "ERR_CANNOT_BE_EMPTY": "tidak boleh kosong",
-
-      "ERR_NOT_VALID": "Isian ini tidak valid",
-      "ERR_CANNOT_EMPTY": "tidak boleh kosong",
-      "ERR_LENGTH_NOT_VALID": "panjang harus",
-      "ERR_NUMERIC_ONLY": "hanya angka",
-      "ERR_EMAIL_NOT_VALID": "email tidak valid",
-      "ERR_FIELD_NOT_MATCH": "inputan tidak sesuai dengan",
-      "ERR_DATE_NOT_VALID": "tanggal tidak valid",
-      "ERR_AGE_NOT_VALID": "umur seharusnya",
-      "ERR_CANNOT_EQUAL": "tidak boleh sama dengan",
-      "ERR_NUMERIC_VALUE": "angka harus",
-      "ERR_GT": " lebih besar dari ",
-      "ERR_LT": " lebih kurang dari ",
-      "ERR_EQ": " sama dengan ",
-      "ERR_LTE": " kurang atau sama dengan ",
-      "ERR_GTE": " lebih atau sama dengan ",
-      "ERR_SAVE_FORM": "Ops, kami tidak dapat menyimpan formulir ini, periksa pesan kesalahan pada inputan dan coba lagi.",
-      "ERR_TRANS_ACCOUNT_NOT_COMPLETE": "Profil Anda belum lengkap, silahkan lengkapi terlebih dahulu untuk dapat melakukan transaksi.",
-      "ERR_TRANS_ACCOUNT_NOT_VERIFY": "Profil Anda sedang dalam proses verifikasi, Anda dapat melanjutkan transaksi setelah profil berhasil terverifikasi.",
-
-      "CHECKOUT_ERROR_INSUFFICIENTBALANCE": "Maaf, saldo Anda tidak mencukupi",
-      "CHECKOUT_ERROR_INSUFFICIENTUNIT": "Maaf, product yang anda punya tidak mencukupi",
-      "CHECKOUT_ERROR_MIN": "Maaf, minimal pembelian tidak sesuai",
-      "CHECKOUT_ERROR_MINBAL": "Maaf, minimal sisa unit product tidak sesuai",
-      "CHECKOUT_ERROR_USERNOTYETDEPOSIT": "Maaf, Anda harus melakukan deposit untuk melanjutkan transaksi (TBD)",
-      "CHECKOUT_ERROR_ACTIVECARTNOTFOUND": "Maaf, kantong belanja anda kosong (TBD)",
-      "CHECKOUT_ERROR_USERNOTYETVEIFIED": "Maaf, akun Anda belum di verify oleh sistem (TBD)",
-      "CHECKOUT_ERROR_USERNOTCOMPLETE": "Maaf, anda harus melengkapi profil sebelum melakukan transaksi (TBD)",
-      "CHECKOUT_ERROR_CODEWRONG": "Maaf, kode verifikasi yang Anda masukkan tidak benar",
-      "SWITCHING_ERROR_CANNOT_EQUAL": "Maaf, Switch tidak dapat dilakukan terhadap produk yang sama",
-      "ERR_PASSWORD_EMPTY": "Masukkan kata sandi Anda.",
-
-      "ERR_FACE": "Transaksi Anda kurang dari jumlah minimum pembelian yang ditetapkan. Silakan ubah terlebih dahulu.",
-      "ERR_FACE_SELL": "Transaksi Anda kurang dari jumlah minimum penjualan yang ditetapkan. Silakan ubah terlebih dahulu.",
-      "ERR_ONLY_REDEMPT": "Sisa unit product Anda tidak mencukupi batas minimum saldo yang ditetapkan",
-
-      "ERR_UNKNOWN": "Ops, terjadi kesalahan, silahkan coba lagi.",
-
-      "ERR_REMAINING_BALANCE": "Sisa Unit product yang Anda miliki kurang dari jumlah minimum saldo yang ditetapkan. Silakan ubah terlebih dahulu."
-    }
-  },
-  label: {
-    en: {
-      "GREETING_MORNING": "Good Morning!",
-      "GREETING_AFTERNOON": "Good Afternoon!",
-      "GREETING_EVENING": "Good Evening!",
-      "GREETING_WELCOME": "Welcome Back",
+  "label": {
+    "en": {
+      "GREETING_MORNING": "",
+      "GREETING_AFTERNOON": "",
+      "GREETING_EVENING": "",
+      "GREETING_WELCOME": "Sign in",
       "SUBMIT": "Submit",
-      "ENTER_YOUR_DETAIL": "Enter your detail below here",
+      "ENTER_YOUR_DETAIL": "to continue <strong>PayOr</strong>",
       "FORGOT_PASSWORD": "Forgot your password?",
       "DONT_HAVE_ACCOUNT": "Don't have an account yet?",
       "SIGN_UP_NOW": "Register now",
@@ -165,7 +54,6 @@ module.exports = {
       "SORT_BY_NAV": "Sort by last NAV",
       "SORT_BY_TYPE": "Sort by type",
       "EXISTING_ACCOUNT": "You are a Paytren Aset Manajemen customer?",
-
       "FIRST_NAME_LABEL": "First name",
       "MIDDLE_NAME_LABEL": "Middle name",
       "LAST_NAME_LABEL": "Last name",
@@ -174,7 +62,6 @@ module.exports = {
       "IDENTITY_EXPIRED_LABEL": "Identity expired at",
       "LIFETIME_LABEL": "Lifetime identity",
       "NPWP_INPUT_LABEL": "NPWP number",
-
       "NATIONALITY_LABEL": "Nationality",
       "BIRTH_PLACE_LABEL": "Birthplace",
       "BIRTH_DATE_LABEL": "Birthdate",
@@ -219,7 +106,6 @@ module.exports = {
       "NPWP_LABEL": "Upload NPWP (Uploadable file types: PDF, PNG and JPG; Maximum file size: 3MB)",
       "KTP_EXTRA_LABEL": "Uploadable file types: PDF, PNG and JPG; Maximum file size: 3MB",
       "DOESNT_HAVE_NPWP_LABEL": "Does not have NPWP",
-
       "JOB_INFORMATION_TITLE": "Job Information",
       "JOB_INFORMATION_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "OCCUPATION_LABEL": "Occupation",
@@ -250,7 +136,6 @@ module.exports = {
       "IDENTITY_ADDRESS_LABEL": "Identity address",
       "CURRENT_ADDRESS_LABEL": "Current address",
       "OFFICE_ADDRESS": "Office address",
-
       "BANK_INFORMATION_TITLE": "Bank Information",
       "BANK_INFORMATION_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "BANK_NAME_LABEL": "Bank name",
@@ -259,12 +144,10 @@ module.exports = {
       "BANK_ACCOUNT_NAME_LABEL": "Bank account name",
       "BANK_ADDRESS_LABEL": "Bank address",
       "CURRENCY_LABEL": "Currency",
-
       "INVESTMENT_PURPOSE_TITLE": "Investment Purpose",
       "INVESTMENT_PURPOSE_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "INVESTMENT_OBJECTIVE_LABEL": "Investment Objective",
       "INVESTMENT_OBJECTIVE_OTHER_LABEL": "Other Investment Objective",
-
       "RISK_PROFILE_TITLE": "Risk Profile",
       "RISK_PROFILE_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "RISK_1_LABEL": "Select horizon / term of your investment",
@@ -284,77 +167,58 @@ module.exports = {
       "YOUR_RISK_PROFILE_LABEL": "Your Risk Profile",
       "YES_RISK_LABEL": "Yes",
       "NO_RISK_LABEL": "No (Capital market investments are less suitable for you)",
-
       "CUSTOMER_STATEMENT_TITLE": "Customer Statement",
       "CUSTOMER_STATEMENT_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "TNC_CUST_STATMNT": "<div class=\"tnc tnc-profile\"> <ol> Understanding and agreeing on Wakalah Akad Wakalah In accordance with the Fatwa of the National Sharia Council Number 20 / DSN-MUI / IV / 2001, the agreement between Investment Manager and Holder of Statement Unit based on Collective Investment Contract Mutual fund is a contract made in Wakalah, The Holder of Participation Unit shall mandate the Investment Manager to invest in the interests of the Holder of Participation Units in accordance with the provisions contained in the Collective Investment Contract and the Fund's prospectus. The Investment Manager and Custodian Bank (Wakilin) ​​act on behalf of the Holder of Participation Unit (Muwakkil) where the Investment Manager is authorized to manage the collective investment portfolio and the Custodian Bank is authorized to carry out collective custody. </li><li> Stating that all the information I / we include in this form is true and legitimate there is no concealment of material facts. Responsible for all third party demands both civil / criminal as a result of my / us. </li><li> Has received, reviewed and understood the prospectus and all the rules of the Investment Fund transaction established by PT Paytren Asset Management and agreed to comply with all applicable rules, including any changes that may arise in the future. </li><li> Declares that the source of funds I / we use in the transaction of purchase of the Fund is not obtained or derived from money laundering or other activities that violate the law. </li><li> Will not use a Mutual Fund account as a means to take unlawful actions, including but not limited to money laundering and is entirely responsible for committing such crimes. </li>Understanding that account opening approval may be considered for granted based on information in this form and other terms of agreement, PT Paytren Asset Management reserves the right to decline this application without any requirement to provide a reason. </li><li> Guarantees not to conduct transactions for the purpose of deceiving, obscure, or avoiding reporting to the Financial Transaction Reporting and Analysis Center (PPATK) under applicable terms. </li><li> Ensure and certify that the data submitted on the date of this statement (which I / have attached) is valid, true and final. No additions and / or changes thereafter. </li></ol></div>",
       "TERMS_COND_LABEL": "I agree with the statement of Sharia Fund Account Opening PT PayTren Asset Management",
       "TERMS_CONDITION_PREV_LABEL": "Investment through mutual funds carries risks, prospective investors must read and understand the prospectus before deciding to invest through mutual funds, past performance does not reflect future performance",
-
       "REVIEW_TITLE": "Review Your Profile",
       "REVIEW_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
-
       "SUCCESS_FORM_SUBMITED": "Thank you, the registration of Shariah mutual fund PT PayTren Your Asset Management has been successfully saved. We will process your data verification.",
-
       "PRODUCT_DETAIL_LABEL": "Product Details",
       "PRODUCT_PERFORMANCE_LABEL": "Product Performance Information",
       "PRODUCT_NEWS_AND_PROMO_LABEL": "News and Promos",
-
       "FUND_NAME_LABEL": "Product Name",
       "TYPE_LABEL": "Type",
       "NAV_AS_OF_LABEL": "NAV as of",
       "BALANCE_LABEL": "Balance",
-
       "BUY_LABEL": "BUY",
       "SELL_LABEL": "SELL",
       "SWITCH_LABEL": "SWITCH",
-
       "SEND_PAYMENT_LABEL": "Your transaction is being processed. Please make the payment <strong>before 14:00</strong> today to the following account:",
       "SEND_PAYMENT2_LABEL": "<strong>If you do not make the payment within a period of 1 days, then your transaction will be deleted from the system.</strong>",
       "SEND_PAYMENT3_LABEL": "<strong>You will receive the fund maximum of 7 business days after this transaction.</strong>",
       "SEND_PAYMENT4_LABEL": "<strong>Once verified, your product switcing will be processed immediately.</strong>",
-
       "RISK_NOT_MATCH_LABEL": "Your risk profile not match with this product",
       "ARE_YOU_SURE_LABEL": "You are about to update some information on your profile",
       "NO_UNIT_LABEL": "You don’t have unit for this Fund",
-
       "MINIMUM_LABEL": "Minimum",
       "AMOUNT_LABEL": "Amount",
       "CODE_LABEL": "Verification Code",
       "SEND_LABEL": "Send",
-
       "CODE_SUCCESSFULLY_SENT_LABEL": "Verification code successfully sent, please check your email / phone",
       "TOOMUCH_CODE_REQUEST": "Sorry, we not allow to re-send your security code more than 3 times. Please contact our support",
-
-
       "AGREEMENT_TRANSACTION": "I agree to perform transaction with PayTren Asset Management and understand the ",
       "TAC": "Terms and Conditions",
       "TRANSACTION_SUCCESS_LABEL": "Your transaction has been successfully processed",
-
       "YOU_HAVE_LABEL": "You have",
       "MIN_SELL_LABEL": "Minimum amount / unit for sell",
       "MIN_BALANCE_LABEL": "Minimum balance after transaction",
       "YOUR_REMAINING_BALANCE_LABEL": "Your remaining balance",
-
       "SELECT_BANK_LABEL": "Select your bank",
       "TERMS_CONDITION_LABEL": "Terms and Conditions",
       "SELECT_PRODUCT_SWITCH_LABEL": "Select your product target",
-
       "AVAILABLE_BALANCE_LABEL": "Available Balance",
       "AVAILABLE_UNIT_LABEL": "Available Unit",
-
       "NOT_RECOMENDED_LABEL": "PT PayTren Asset Management (including its subsidiaries, associates and affiliates) (PayTren Asset Management) does not provide any offers, suggestions or recommendations for investing in the Funds I / In this case, I / we acted alone in analyzing and selecting the Fund and the investment decision was made not according to suggestions or recommendations of PayTren Asset Management. ",
-
       "LAST_NAV_LABEL": "Last NAV",
       "MY_PORTOFOLIO_LABEL": "Your Portfolio",
       "OTHER_PRODUCT_LABEL": "Other Product(s)",
-
       "TRANSACTION_LIST_LABEL": "Transaction List",
       "FIRST_LABEL": "First",
       "NEXT_LABEL": "Next",
       "PREVIOUS_LABEL": "Previous",
       "LAST_LABEL": "Last",
-
       "PENDING_LABEL": "Pending",
       "WAIT_FOR_VERIFICATION_LABEL": "Wait for verification",
       "COMPLETE_LABEL": "Complete",
@@ -363,25 +227,18 @@ module.exports = {
       "TOTAL_SELL_LABEL": "Total sell",
       "TRANSACTION_DATE_LABEL": "Transaction date",
       "FEE_LABEL": "Fee",
-
       "PDF_DOWNLOAD_LABEL": "Download Profile as PDF",
       "EDIT_PROFILE_LABEL": "Edit profile",
-
       "THERE_IS_NO_DATA_LABEL": "There is no data to display",
-
       "PENDING_TRANSACTION_NOTIFICATION_LABEL": "You have multiple transactions that require confirmation, Please confirm your transaction for us to process immediately.",
-
       "TRANSACTION_DETAIL": "Transaction detail",
       "TRANSACTION_TYPE_LABEL": "Transaction type",
-
       "CONFIRMATION_DATA_LABEL": "Payment confirmation data",
       "BANK_FROM_LABEL": "Send money from",
       "BANK_DESTINATION_LABEL": "Send money to",
       "PAYMENT_PROOF_LABEL": "Payment receipt",
       "PAYMENT_DATE_LABEL": "Payment date",
-
       "CONFIRM_TRANSACTION_LABEL": "Payment Confirmation",
-
       "REPEAT_LABEL": "Redo",
       "CONTINUE_LABEL": "Continue",
       "CLOSE_LABEL": "Close",
@@ -392,66 +249,37 @@ module.exports = {
       "CONFIRM_SUCCESS_WITH_WARNING": "Your confirmation is past 1 PM After verification, your purchase of your product will be processed on the next day.",
       "CONFIRM_CANCEL_LABEL": "Are you sure to cancel this transaction?",
       "TRANSACTION_CANCEL_SUCCESS_LABEL": "Your transaction has been canceled",
-
       "OLD_PASSWORD_LABEL": "Old password",
       "NEW_PASSWORD_LABEL": "New password",
       "NEW_PASSWORD_CONFIRMATION_LABEL": "Confirm new password",
-
       "CHANGE_PASSWORD_SUCCESS_LABEL": "Your password was changed successfully",
       "CHANGE_PASSWORD_FAILED_LABEL": "Your old password is incorrect, please try again",
-
       "PLEASE_SIGN_HERE1_LABEL": "Please sign here (speciment 1)*",
       "PLEASE_SIGN_HERE2_LABEL": "Please sign here (speciment 2)*",
-
-
-
-      "GREETING_WELCOME": "Sign in",
-      "GREETING_MORNING": "",
-      "GREETING_AFTERNOON": "",
-      "GREETING_EVENING": "",
-      "ENTER_YOUR_DETAIL": "to continue <strong>PayOr</strong>",
       "YOUR_EMAIL_LABEL": "Your Email",
       "YOUR_PASSWORD_LABEL": "Your Password",
       "OUR_PRODUCT_LABEL": "Our Product",
       "GOOD_DAY_LABEL": "Good day",
-
       "CONSERVATIVE_LABEL": "Conservative",
       "VERY_CONSERVATIVE_LABEL": "Very Conservative",
       "MODERATE_LABEL": "Moderate",
       "AGGRESSIVE_LABEL": "Aggressive",
-      "BALANCE_LABEL": "Balance",
-
       "MAINTENANCE_LABEL": "Dear Customer, In order to improve PayOR infrastructure, we inform you that the time for Login can not be started",
       "MAINTENANCE_2_LABEL": "Thank you for your trust in PT Paytren Aset Manajemen.",
       "CUTOFFMESSAGE_LABEL": "Sorry the transaction can not be made because it entered the cut off time. Please try again in a few moments.",
       "WARNING_EDIT_PROFILE_LABEL": "Dear Customer, If you make a change of data then Transaction can not be made until your data is verified and receive email notification from us. <br/> <br/> Thank you.",
-
       "FIRST_NOTIF_LABEL": "Please do initial registration",
       "SECOND_NOTIF_LABEL": "Click here",
-
-
-      "YOUR_EMAIL_LABEL": "Your Email",
-      "YOUR_PASSWORD_LABEL": "Your Password",
-      "OUR_PRODUCT_LABEL": "Our Product",
-      "GOOD_DAY_LABEL": "Good day",
-
-      "CONSERVATIVE_LABEL": "Conservative",
-      "AGGRESSIVE_LABEL": "Aggressive",
-      "BALANCE_LABEL": "Balance",
-      "SIGNIN_LABEL": "Signin",
-      "REGISTER_LABEL": "Register",
-
-      "SORT_BASED_ON_LABEL": "Sort based on",
-      "SEARCH_LABEL": "Search product"
-
+      "STATEMENT_SIGNATURE_TITLE_LABEL": "<h3 class=\"statement-title\"> CUSTOMER STATEMENT OF USE OF ELECTRONIC SIGNATURE </h3>",
+      "STATEMENT_SIGNATURE_DETAIL_LABEL": "<ol class=\"statement-det\"> <li> Understand and understand that in accordance with RI Law number 11 of 2008 on information and electronic transactions and Government Regulation No. 82 of 2012 on the system and electronic transactions, where in Article 1 paragraph (12) of Law No. 11 of 2008 states that “Electronic signature is a signature consisting of Electronic Information embedded, associated or related to other Electronic Information used as a means of verification and authentication“ ; and reinforced by Article 5 of the UUITE it is stated that “Electronic Information and / or Electronic Documents and / or prints are valid legal evidence, this is an extension of valid evidence in accordance with applicable Laws of Procedure in Indonesia.“ </li> <li> Declares that the process of making electronic signatures performed by the Customer Candidate itself is intended for submission the opening of a Sharia (Islamic) Fund account in PT PayTren Asset Management. </li> <li> Declare that the electronic signature in the transaction constitutes the approval of the prospective Customer for electronic information and / or electronic document signed with the electronic signature. </li> <li> Ensures that it will not grant Online Funds access to other parties. </li> <li> Have applied prudential principles to avoid unauthorized use of data relating to the manufacture of electronic signatures. </li> <li> Hereby waives PT PayTren Asset Management from any loss and legal consequences arising in the future. </li> </ol>"
     },
-    idn: {
-      "GREETING_MORNING": "Selamat Pagi!",
-      "GREETING_AFTERNOON": "Selamat Siang!",
-      "GREETING_EVENING": "Selamat Malam!",
-      "GREETING_WELCOME": "Selamat Datang Kembali",
+    "idn": {
+      "GREETING_MORNING": "",
+      "GREETING_AFTERNOON": "",
+      "GREETING_EVENING": "",
+      "GREETING_WELCOME": "Masuk",
       "SUBMIT": "Kirim",
-      "ENTER_YOUR_DETAIL": "Masukkan detail akun Anda di bawah ini",
+      "ENTER_YOUR_DETAIL": "untuk melanjutkan ke <strong>PayOr</strong>",
       "FORGOT_PASSWORD": "Anda lupa password?",
       "DONT_HAVE_ACCOUNT": "Anda belum memiliki akun?",
       "SIGN_UP_NOW": "Daftar sekarang",
@@ -499,7 +327,6 @@ module.exports = {
       "SORT_BY_NAV": "Urutkan berdasarkan NAV terakhir",
       "SORT_BY_TYPE": "Urutkan berdasarkan tipe",
       "EXISTING_ACCOUNT": "Anda merupakan nasabah Paytren Aset Manajemen?",
-
       "FIRST_NAME_LABEL": "Nama depan",
       "MIDDLE_NAME_LABEL": "Nama tengah",
       "LAST_NAME_LABEL": "Nama belakang",
@@ -547,12 +374,11 @@ module.exports = {
       "ASSET_OWNERSHIP_LABEL": "Kepemilikan aset investasi reksa dana",
       "ASSET_OWNERSHIP_OTHER_LABEL": "Kepemilikan aset lainnya",
       "SID_LABEL": "SID",
-      "STATEMENT_LABEL": "Pilihan statement",
-      "KTP_LABEL": "Unggah e-KTP (Tipe file yang dapat diunggah: PDF, PNG dan JPG; Maksimum besar file: 3MB)",
-      "NPWP_LABEL": "Unggah NPWP (Tipe file yang dapat diunggah: PDF, PNG dan JPG; Maksimum besar file: 3MB)",
+      "STATEMENT_LABEL": "Jenis laporan",
+      "KTP_LABEL": "Unggah identitas (Tipe file yang dapat diunggah: PDF, PNG dan JPG; Maksimum besar file: 3MB)",
+      "NPWP_LABEL": "Unggah identitas (Tipe file yang dapat diunggah: PDF, PNG dan JPG; Maksimum besar file: 3MB)",
       "KTP_EXTRA_LABEL": "Tipe file yang dapat diunggah: PDF, PNG dan JPG; Maksimum besar file: 3MB",
       "DOESNT_HAVE_NPWP_LABEL": "Tidak memiliki NPWP",
-
       "JOB_INFORMATION_TITLE": "Data pekerjaan",
       "JOB_INFORMATION_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "OCCUPATION_LABEL": "Pekerjaan",
@@ -583,7 +409,6 @@ module.exports = {
       "IDENTITY_ADDRESS_LABEL": "Alamat sesuai identitas",
       "CURRENT_ADDRESS_LABEL": "Alamat tempat tinggal",
       "OFFICE_ADDRESS": "Alamat kantor",
-
       "BANK_INFORMATION_TITLE": "Data bank",
       "BANK_INFORMATION_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "BANK_NAME_LABEL": "Nama bank",
@@ -592,12 +417,10 @@ module.exports = {
       "BANK_ACCOUNT_NAME_LABEL": "Nama rekening bank",
       "BANK_ADDRESS_LABEL": "Alamat bank",
       "CURRENCY_LABEL": "Mata uang",
-
       "INVESTMENT_PURPOSE_TITLE": "Tujuan Investasi",
       "INVESTMENT_PURPOSE_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "INVESTMENT_OBJECTIVE_LABEL": "Tujuan investasi",
       "INVESTMENT_OBJECTIVE_OTHER_LABEL": "Tujuan investasi lainnya",
-
       "RISK_PROFILE_TITLE": "Profil Resiko",
       "RISK_PROFILE_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "RISK_1_LABEL": "Pilih horizon/jangka waktu investasi anda",
@@ -617,76 +440,58 @@ module.exports = {
       "YOUR_RISK_PROFILE_LABEL": "Profil Resiko Anda",
       "YES_RISK_LABEL": "Ya",
       "NO_RISK_LABEL": "Tidak (Investasi pasar modal kurang sesuai untuk anda)",
-
       "CUSTOMER_STATEMENT_TITLE": "Pernyataan Nasabah",
       "CUSTOMER_STATEMENT_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
       "TNC_CUST_STATMNT": "<div class=\"tnc tnc-profile\"> <ol> <li>Mengerti memahami dan menyetujui Akad Wakalah Sesuai Fatwa Dewan Syariah Nasional Nomor 20/DSN-MUI/IV/2001, perjanjian (akad) antara Manajer Investasi dan Pemegang Unit Pernyataan berdasarkan Kontrak Investasi Kolektif Reksa dana merupakan akad yang dilakukan secara Wakalah, yaitu Pemegang Unit Penyertaan memberikan mandat kepada Manajer Investasi untuk melakukan investasi bagi kepentingan Pemegang Unit Penyertaan sesuai dengan ketentuan yang tercantum dalam Kontrak Investasi Kolektif dan prospektus Reksa Dana. Manajer Investasi dan Bank Kustodian (Wakiliin) bertindak untuk kepentingan para Pemegang Unit Penyertaan (Muwakkil) dimana Manajer Investasi diberi wewenang untuk mengelola portofolio investasi kolektif dan Bank Kustodian diberi wewenang untuk melaksanakan penitipan kolektif.</li><li>Menyatakan bahwa semua informasi yang saya / kami cantumkan dalam formulir ini adalah benar dan sah tidak terdapat penyembunyian terhadap fakta material. Bertanggung jawab penuh atas segala tuntutan pihak ketiga baik secara perdata / pidana akibat keterangan saya / kami tersebut.</li><li>Telah menerima, menelaah,dan memahami prospektus serta semua aturan transaksi Reksa Dana yang ditetapkan oleh PT Paytren Aset Manajemen dan setuju untuk memenuhi seluruh peraturan yang ditetapkan, termasuk pada perubahan yang mungkin timbul di kemudian hari.</li><li>Menyatakan bahwa sumber dana yang saya /kami gunakan dalam bertransaksi pembelian Reksa Dana adalah bukan didapatkan atau berasal dari pencucian uang (money laundering) atau kegiatan lain yang melanggar hukum.</li><li>Tidak akan menggunakan rekening Reksa Dana sebagai sarana untuk melakukan tindakan yang dapat dikategorikan melanggar hukum, termasuk namun tidak terbatas pada tindak pidana pencucian uang (money laundering) dan bertanggung jawab sepenuhnya apabila melakukan tindak pidana tersebut.</li><li>Mengerti bahwa persetujuan pembukaan rekening dapat dipertimbangkan untuk diberikan berdasarkan informasi dalam formulir ini dan syarat-syarat perjanjian lainnya, PT Paytren Aset Manajemen mempunyai hak untuk menolak aplikasi ini tanpa adanya keharusan untuk memberi alasan.</li><li>Menjamin tidak melakukan transaksi untuk maksud mengelabui, mengaburkan, atau menghindari pelaporan kepada Pusat Pelaporan dan Analisa Transaksi Keuangan (PPATK) berdasarkan ketentuan yang berlaku.</li><li>Menjamin dan menyatakan bahwa data-data yang disampaikan pada tanggal pernyataan ini (yang telah saya/kami lampirkan) adalah sah, benar, dan terakhir. Tidak ada penambahan dan/atau perubahan sesudahnya.</li></ol></div>",
       "TERMS_COND_LABEL": "Saya setuju dengan pernyataan Pembukaan Rekening Reksa Dana Syariah PT PayTren Aset Manajemen",
       "TERMS_CONDITION_PREV_LABEL": "Investasi melalui reksa dana mengandung risiko, calon pemodal wajib membaca dan memahami prospektus sebelum memutuskan untuk berinvestasi melalui reksa dana, kinerja masa lalu tidak mencerminkan kinerja masa mendatang",
-
       "REVIEW_TITLE": "Tinjau Ulang",
       "REVIEW_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.",
-
       "SUCCESS_FORM_SUBMITED": "Terima kasih, pendaftaran Reksa Dana Syariah PT PayTren Aset Manajemen Anda telah berhasil disimpan. Kami akan memproses verifikasi data Anda.",
-
       "PRODUCT_DETAIL_LABEL": "Informasi Produk",
       "PRODUCT_PERFORMANCE_LABEL": "Informasi Performa Produk",
       "PRODUCT_NEWS_AND_PROMO_LABEL": "Berita dan Promo",
-
       "FUND_NAME_LABEL": "Nama produk",
       "TYPE_LABEL": "Tipe produk",
       "NAV_AS_OF_LABEL": "NAB per",
-      "BALANCE_LABEL": "Saldo dalam unit",
-
+      "BALANCE_LABEL": "Saldo",
       "BUY_LABEL": "BELI",
       "SELL_LABEL": "JUAL",
       "SWITCH_LABEL": "SWITCH",
-
       "SEND_PAYMENT_LABEL": "Transaksi Anda sedang di proses. Silahkan melakukan pembayaran <strong>sebelum pukul 14:00</strong> hari ini ke rekening berikut: ",
       "SEND_PAYMENT2_LABEL": "<strong>Jika Anda tidak melakukan pembayaran dalam jangka waktu 1 hari, maka transaksi Anda akan di hapus dari sistem.</strong>",
       "SEND_PAYMENT3_LABEL": "<strong>Dana akan Anda terima maksimum 7 hari kerja setelah transaksi ini disetujui.</strong>",
       "SEND_PAYMENT4_LABEL": "<strong>Setelah diverifikasi, pengalihan produk Anda akan segera diproses.</strong>",
-
       "RISK_NOT_MATCH_LABEL": "Risk profile anda tidak sesuai dengan produk ini",
       "ARE_YOU_SURE_LABEL": "Apakah Anda yakin untuk mengubah KYC?",
       "NO_UNIT_LABEL": "Anda tidak memiliki unit untuk Reksa Dana ini",
-
       "MINIMUM_LABEL": "Minimal",
       "AMOUNT_LABEL": "Amount",
       "CODE_LABEL": "Kode Verifikasi",
       "SEND_LABEL": "Kirim",
-
       "CODE_SUCCESSFULLY_SENT_LABEL": "Kode verifikasi berhasil dikirim, silahkan periksa email / hanphone Anda.",
       "TOOMUCH_CODE_REQUEST": "Maaf, kami tidak memungkinkan untuk mengirim ulang kode keamanan Anda lebih dari 3 kali. Harap hubungi contact support kami",
-
       "AGREEMENT_TRANSACTION": "Saya menyetujui untuk melakukan transaksi dengan PayTren Asset Management dan menyetujui ",
       "TAC": "Syarat dan Ketentuan",
       "TRANSACTION_SUCCESS_LABEL": "Transaksi Anda berhasil di proses",
-
       "YOU_HAVE_LABEL": "Unit product yang Anda miliki adalah",
       "MIN_SELL_LABEL": "Minimal jual",
       "MIN_BALANCE_LABEL": "Saldo minimal setelah transaksi",
       "YOUR_REMAINING_BALANCE_LABEL": "Sisa saldo Anda",
-
       "SELECT_BANK_LABEL": "Pilih bank tujuan Anda",
       "TERMS_CONDITION_LABEL": "Syarat dan Ketentuan",
       "SELECT_PRODUCT_SWITCH_LABEL": "Pilih produk target Anda",
-
       "AVAILABLE_BALANCE_LABEL": "Dana Tersedia",
       "AVAILABLE_UNIT_LABEL": "Unit Tersedia",
-
       "NOT_RECOMENDED_LABEL": "PT PayTren Asset Management (termasuk anak perusahaan, asosiasi, dan afiliasinya) (PayTren Asset Management) tidak memberikan suatu penawaran, saran, atau rekomendasi untuk berinvestasi di Reksa Dana yang telah saya/kami beli. Dalam hal ini, saya/kami bertindak sendiri dalam menganalisa dan memilih Reksa Dana tersebut dan keputusan berinvestasi dilakukan tidak sesuai saran atau rekomendasi dari PayTren Asset Management.",
-
       "LAST_NAV_LABEL": "NAB Terakhir",
       "MY_PORTOFOLIO_LABEL": "Portofolio Anda",
       "OTHER_PRODUCT_LABEL": "Produk lainnya",
-
       "TRANSACTION_LIST_LABEL": "Data Transaksi Anda",
       "FIRST_LABEL": "Awal",
       "NEXT_LABEL": "Berikut",
       "PREVIOUS_LABEL": "Sebelum",
       "LAST_LABEL": "Akhir",
-
       "PENDING_LABEL": "Tertunda",
       "WAIT_FOR_VERIFICATION_LABEL": "Menunggu verifikasi",
       "COMPLETE_LABEL": "Berhasil",
@@ -695,26 +500,18 @@ module.exports = {
       "TOTAL_SELL_LABEL": "Total jual",
       "TRANSACTION_DATE_LABEL": "Tanggal transaksi",
       "FEE_LABEL": "Biaya transaksi",
-
       "PDF_DOWNLOAD_LABEL": "Unduh Profil dalam bentuk PDF",
       "EDIT_PROFILE_LABEL": "Ubah profil",
-
       "THERE_IS_NO_DATA_LABEL": "Tidak ada data untuk ditampilkan",
-
       "PENDING_TRANSACTION_NOTIFICATION_LABEL": "Anda memiliki beberapa transaksi yang membutuhkan konfirmasi. Segera konfirmasi transaksi Anda agar dapat segera kami proses.",
-
       "TRANSACTION_DETAIL": "Detail transaksi",
       "TRANSACTION_TYPE_LABEL": "Tipe Transaksi",
-
-
       "CONFIRMATION_DATA_LABEL": "Data konfirmasi pembayaran",
       "BANK_FROM_LABEL": "Dikirim dari",
       "BANK_DESTINATION_LABEL": "Bank tujuan",
       "PAYMENT_PROOF_LABEL": "Bukti pembayaran",
       "PAYMENT_DATE_LABEL": "Tanggal pembayaran",
-
       "CONFIRM_TRANSACTION_LABEL": "Konfirmasi pembayaran",
-
       "REPEAT_LABEL": "Ulangi",
       "CONTINUE_LABEL": "Lanjutkan",
       "CLOSE_LABEL": "Tutup",
@@ -725,54 +522,131 @@ module.exports = {
       "CONFIRM_SUCCESS_WITH_WARNING": "Konfirmasi Anda sudah lewat pukul 13.00 WIB. Setelah diverifikasi, pembelian produk Anda akan segera diproses pada hari bursa berikutnya.",
       "CONFIRM_CANCEL_LABEL": "Apakah Anda yakin untuk membatalkan transaksi ini?",
       "TRANSACTION_CANCEL_SUCCESS_LABEL": "Transaksi Anda berhasil di batalkan.",
-
       "OLD_PASSWORD_LABEL": "Kata sandi lama",
       "NEW_PASSWORD_LABEL": "Kata sandi baru",
       "NEW_PASSWORD_CONFIRMATION_LABEL": "Konfirmasi kata sandi baru",
-
       "CHANGE_PASSWORD_SUCCESS_LABEL": "Kata sandi Anda berhasil diubah",
       "CHANGE_PASSWORD_FAILED_LABEL": "Kata sandi lama Anda tidak benar, silahkan coba kembali",
-
       "PLEASE_SIGN_HERE1_LABEL": "Mohon bubuhkan tanda tangan disini (sampel 1)*",
       "PLEASE_SIGN_HERE2_LABEL": "Mohon bubuhkan tanda tangan disini (sampel 2)*",
-
-      "GREETING_WELCOME": "Masuk",
-      "GREETING_MORNING": "",
-      "GREETING_AFTERNOON": "",
-      "GREETING_EVENING": "",
-      "ENTER_YOUR_DETAIL": "untuk melanjutkan ke <strong>PayOr</strong>",
       "YOUR_EMAIL_LABEL": "Email Anda",
       "YOUR_PASSWORD_LABEL": "Kata sandi Anda",
       "OUR_PRODUCT_LABEL": "Produk Kami",
       "GOOD_DAY_LABEL": "Selamat datang kembali",
-
       "CONSERVATIVE_LABEL": "Konservatif",
       "VERY_CONSERVATIVE_LABEL": "Sangat Konservatif",
       "MODERATE_LABEL": "Moderat",
       "AGGRESSIVE_LABEL": "Agresif",
-      "BALANCE_LABEL": "Seimbang",
-
       "MAINTENANCE_LABEL": "Nasabah Yth,  Dalam rangka penyempurnaan infrastruktur PayOR, kami informasikan bahwa waktu untuk Login tidak dapat dilakukan mulai ",
       "MAINTENANCE_2_LABEL": ". Terima kasih atas kepercayaan anda kepada PT Paytren Aset Manajemen.",
       "CUTOFFMESSAGE_LABEL": "Mohon maaf transaksi tidak bisa dilakukan karena memasuki cut off time. Silahkan anda Coba kembali beberapa saat lagi.Terima kasih.",
       "WARNING_EDIT_PROFILE_LABEL": "Nasabah Yth,  Jika anda melakukan perubahan data maka Transaksi tidak dapat dilakukan sampai data anda diverifikasi dan menerima email pemberitahuan dari kami. <br/><br/>Terima kasih.",
       "FIRST_NOTIF_LABEL": "Silahkan melakukan pendaftaran awal",
       "SECOND_NOTIF_LABEL": "Klik disini",
-
-
-      "YOUR_EMAIL_LABEL": "Email Anda",
-      "YOUR_PASSWORD_LABEL": "Katasandi Anda",
-      "OUR_PRODUCT_LABEL": "Produk Kami",
-      "GOOD_DAY_LABEL": "Selamat datang kembali",
-
-      "CONSERVATIVE_LABEL": "Konservatif",
-      "AGGRESSIVE_LABEL": "Agresif",
-      "BALANCE_LABEL": "Seimbang",
-      "SIGNIN_LABEL": "Masuk",
-      "REGISTER_LABEL": "Daftar",
-
-      "SORT_BASED_ON_LABEL": "Urutkan berdasarkan",
-      "SEARCH_LABEL": "Cari produk"
+      "STATEMENT_SIGNATURE_TITLE_LABEL": "<h3 class=\"statement-title\">PERNYATAAN NASABAH ATAS PENGGUNAAN TANDA TANGAN ELEKTRONIK</h3>",
+      "STATEMENT_SIGNATURE_DETAIL_LABEL": "<ol class=\"statement-det\"><li>Mengerti dan memahami bahwa sesuai dengan Undang-Undang RI nomor 11 tahun 2008 tentang informasi dan transaksi elektronik serta Peraturan Pemerintah RI Nomor 82 tahun 2012 tentang penyelenggaran system dan transaksi elektronik, dimana dalam Pasal 1 ayat (12) UU no. 11 tahun 2008 dinyatakan bahwa &quot;tanda tangan Elektronik adalah tanda tangan yang terdiri atas Informasi Elektronik yang dilekatkan, terasosiasi atau terkait dengan Informasi Elektronik lainnya yang digunakan sebagai alat verifikasi dan autentifikasi&quot;, dan diperkuat dengan Pasal 5 UUITE dinyatakan bahwa “Informasi Elektronik dan/atau Dokumen Elektronik dan/atau hasil cetaknya merupakan alat bukti hukum yang sah, hal ini merupakan perluasan dari alat bukti yang sah sesuai dengan Hukum Acara yang berlaku di Indonesia”.</li><li>Menyatakan bahwa proses pembuatan tanda tangan elektronik dilakukan oleh Calon Nasabah sendiri ditujukan untuk pengajuan pembukaan rekening Reksa Dana Syariah di PT PayTren Aset Manajemen.</li><li>Menyatakan bahwa tanda tangan elektronik dalam transaksi merupakan persetujuan Calon nasabah atas informasi elektronik dan/atau dokumen elektronik yang di tanda tangani dengan tanda tangan elektronik tersebut.</li><li>Menjamin bahwa tidak akan memberikan akses Reksa Dana Online kepada pihak lain.</li><li>Telah menerapkan prinsip kehati-hatian untuk menghindari penggunaan secara tidak sah terhadap data terkait pembuatan tanda tangan elektronik.</li><li>Dengan ini membebaskan PT PayTren Aset Manajemen dari segala kerugian dan konsekuensi hukum yang timbul di kemudian hari.</li></ol>"
+    }
+  },
+  "errors": {
+    "en": {
+      "ERR_LOGIN": "The email or password is incorrect",
+      "ERR_NOT_EXIST": "We cannot find user with these credential in our system",
+      "ERR_STRONG_PASSWORD": "Password must have capital letters, numbers, and at least 6 characters",
+      "ERR_PASSWORD_CONFIRMATION": "Password Confirmation is not match",
+      "ERR_FORGOT": "Email or Code is incorrect, please try again",
+      "EMAIL_INVALID": "That email address is already taken please choose another one",
+      "PHONE_INVALID": "Phone number is already taken please choose another one",
+      "ERR_USER_NOT_FOUND": "Email is not registered",
+      "ERR_GLOBAL": "Something went wrong, please try again or contact our customer service",
+      "ERR_RESEND_CODE": "You cannot resend the verification code, please contact our customer service",
+      "ERR_CODE_VERIFICATION": "The verification code is incorrect",
+      "ERR_LOCKED": "You have entered wrong password too many times. Please try again in",
+      "ERR_PASSWORD": "Password is incorrect, please try again",
+      "ERR_CANNOT_BE_EMPTY": "cannot be empty",
+      "ERR_NOT_VALID": "This field is not valid",
+      "ERR_CANNOT_EMPTY": "cannot be empty",
+      "ERR_LENGTH_NOT_VALID": "length should be",
+      "ERR_NUMERIC_ONLY": "numeric only",
+      "ERR_EMAIL_NOT_VALID": "email is not valid",
+      "ERR_FIELD_NOT_MATCH": "field is not match",
+      "ERR_DATE_NOT_VALID": "date is not valid",
+      "ERR_AGE_NOT_VALID": "age should be",
+      "ERR_CANNOT_EQUAL": "cannot be equal with",
+      "ERR_NUMERIC_VALUE": "number should be",
+      "ERR_GT": " greather than ",
+      "ERR_LT": " less than ",
+      "ERR_EQ": " equal to ",
+      "ERR_LTE": " less or equal than ",
+      "ERR_GTE": " greather or equal than ",
+      "ERR_SAVE_FORM": "Ops, we were unable to save the form, please check error message in input field and try again.",
+      "ERR_TRANS_ACCOUNT_NOT_COMPLETE": "Your profile is incomplete, please complete it first to make the transaction.",
+      "ERR_TRANS_ACCOUNT_NOT_VERIFY": "Your profile is in the verification process, you can resume the transaction once the profile has been successfully verified.",
+      "CHECKOUT_ERROR_INSUFFICIENTBALANCE": "Sorry, your balance is insufficient",
+      "CHECKOUT_ERROR_INSUFFICIENTUNIT": "Sorry, the product you have is insufficient",
+      "CHECKOUT_ERROR_MIN": "Sorry, minimum purchase is not appropriate",
+      "CHECKOUT_ERROR_MINBAL": "Sorry, at least the remaining unit product does not match",
+      "CHECKOUT_ERROR_USERNOTYETDEPOSIT": "Sorry, you must make a deposit to continue the transaction (TBD)",
+      "CHECKOUT_ERROR_ACTIVECARTNOTFOUND": "Sorry, your shopping cart is empty (TBD)",
+      "CHECKOUT_ERROR_USERNOTYETVEIFIED": "Sorry, your account has not been verified by the system (TBD)",
+      "CHECKOUT_ERROR_USERNOTCOMPLETE": "Sorry, you must complete the profile before making a transaction (TBD)",
+      "CHECKOUT_ERROR_CODEWRONG": "Sorry, the verification code you entered is not correct",
+      "SWITCHING_ERROR_CANNOT_EQUAL": "Sorry, you canot switch to same product (TBD)",
+      "ERR_PASSWORD_EMPTY": "Please insert your password.",
+      "ERR_FACE": "Your transaction is less than the minimum amount of purchase specified. Please change it first.",
+      "ERR_FACE_SELL": "Your transaction is less than the minimum amount of sales specified. Please change it first.",
+      "ERR_ONLY_REDEMPT": "The remaining units of your product are not sufficient for the minimum balance of the set",
+      "ERR_UNKNOWN": "Ops, someting went wrong, please try again",
+      "ERR_REMAINING_BALANCE": "You exceeded limit of your remaining balance, please contact us to remove the limitation"
+    },
+    "idn": {
+      "ERR_LOGIN": "Email atau password tidak benar",
+      "ERR_NOT_EXIST": "Kami tidak dapat menemukan pengguna dengan data ini di sistem kami",
+      "ERR_STRONG_PASSWORD": "Kata sandi harus memiliki huruf kapital, angka, dan minimal 6 karakter",
+      "ERR_PASSWORD_CONFIRMATION": "Konfirmasi Kata sandi tidak sesuai",
+      "ERR_FORGOT": "Email atau Kode tidak benar, silahkan coba lagi",
+      "EMAIL_INVALID": "Alamat email yang sudah terdaftar silahkan pilih yang lain",
+      "PHONE_INVALID": "Nomor telpon genggam yang sudah terdaftar silahkan pilih yang lain",
+      "ERR_USER_NOT_FOUND": "Email tidak terdaftar",
+      "ERR_GLOBAL": "Terjadi kesalahan sistem, silahkan coba lagi atau hubungi pengaduan pelanggan kami",
+      "ERR_RESEND_CODE": "Anda tidak bisa mengirim ulang kode verifikasi, silahkan hubungi pengaduan pelanggan kami",
+      "ERR_CODE_VERIFICATION": "Kode verifikasi tidak benar",
+      "ERR_LOCKED": "Akun anda telah dikunci untuk alasan keamanan, silahkan coba lagi dalam",
+      "ERR_PASSWORD": "Kata sandi tidak benar, silahkan coba lagi",
+      "ERR_CANNOT_BE_EMPTY": "tidak boleh kosong",
+      "ERR_NOT_VALID": "Isian ini tidak valid",
+      "ERR_CANNOT_EMPTY": "tidak boleh kosong",
+      "ERR_LENGTH_NOT_VALID": "panjang harus",
+      "ERR_NUMERIC_ONLY": "hanya angka",
+      "ERR_EMAIL_NOT_VALID": "email tidak valid",
+      "ERR_FIELD_NOT_MATCH": "inputan tidak sesuai dengan",
+      "ERR_DATE_NOT_VALID": "tanggal tidak valid",
+      "ERR_AGE_NOT_VALID": "umur seharusnya",
+      "ERR_CANNOT_EQUAL": "tidak boleh sama dengan",
+      "ERR_NUMERIC_VALUE": "angka harus",
+      "ERR_GT": " lebih besar dari ",
+      "ERR_LT": " lebih kurang dari ",
+      "ERR_EQ": " sama dengan ",
+      "ERR_LTE": " kurang atau sama dengan ",
+      "ERR_GTE": " lebih atau sama dengan ",
+      "ERR_SAVE_FORM": "Ops, kami tidak dapat menyimpan formulir ini, periksa pesan kesalahan pada inputan dan coba lagi.",
+      "ERR_TRANS_ACCOUNT_NOT_COMPLETE": "Profil Anda belum lengkap, silahkan lengkapi terlebih dahulu untuk dapat melakukan transaksi.",
+      "ERR_TRANS_ACCOUNT_NOT_VERIFY": "Profil Anda sedang dalam proses verifikasi, Anda dapat melanjutkan transaksi setelah profil berhasil terverifikasi.",
+      "CHECKOUT_ERROR_INSUFFICIENTBALANCE": "Maaf, saldo Anda tidak mencukupi",
+      "CHECKOUT_ERROR_INSUFFICIENTUNIT": "Maaf, product yang anda punya tidak mencukupi",
+      "CHECKOUT_ERROR_MIN": "Maaf, minimal pembelian tidak sesuai",
+      "CHECKOUT_ERROR_MINBAL": "Maaf, minimal sisa unit product tidak sesuai",
+      "CHECKOUT_ERROR_USERNOTYETDEPOSIT": "Maaf, Anda harus melakukan deposit untuk melanjutkan transaksi (TBD)",
+      "CHECKOUT_ERROR_ACTIVECARTNOTFOUND": "Maaf, kantong belanja anda kosong (TBD)",
+      "CHECKOUT_ERROR_USERNOTYETVEIFIED": "Maaf, akun Anda belum di verify oleh sistem (TBD)",
+      "CHECKOUT_ERROR_USERNOTCOMPLETE": "Maaf, anda harus melengkapi profil sebelum melakukan transaksi (TBD)",
+      "CHECKOUT_ERROR_CODEWRONG": "Maaf, kode verifikasi yang Anda masukkan tidak benar",
+      "SWITCHING_ERROR_CANNOT_EQUAL": "Maaf, Switch tidak dapat dilakukan terhadap produk yang sama",
+      "ERR_PASSWORD_EMPTY": "Masukkan kata sandi Anda.",
+      "ERR_FACE": "Transaksi Anda kurang dari jumlah minimum pembelian yang ditetapkan. Silakan ubah terlebih dahulu.",
+      "ERR_FACE_SELL": "Transaksi Anda kurang dari jumlah minimum penjualan yang ditetapkan. Silakan ubah terlebih dahulu.",
+      "ERR_ONLY_REDEMPT": "Sisa unit product Anda tidak mencukupi batas minimum saldo yang ditetapkan",
+      "ERR_UNKNOWN": "Ops, terjadi kesalahan, silahkan coba lagi.",
+      "ERR_REMAINING_BALANCE": "Sisa Unit product yang Anda miliki kurang dari jumlah minimum saldo yang ditetapkan. Silakan ubah terlebih dahulu."
     }
   }
-};
+}
